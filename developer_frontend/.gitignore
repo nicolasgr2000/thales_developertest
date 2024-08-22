@@ -1,0 +1,64 @@
+# Angular
+/dist/
+/node_modules/
+/e2e/
+src/environments/environment*.ts
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build output
+*.tgz
+
+# Dependency directories
+jspm_packages/
+
+# Yarn
+.yarn/
+.yarnrc.yml
+
+# NPM
+package-lock.json
+npm-debug.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Compiled files
+*.js
+*.d.ts
+
+# Coverage
+coverage/
+
+# SASS
+.sass-cache/
+
+# VS Code settings folder
+.vscode/
+
+# Local history for IDEs
+.localhistory/
+
+# Local build files
+*.local
+
+# Cache
+.cache/

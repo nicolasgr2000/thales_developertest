@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <h2>Employee Search</h2>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter Employee ID"
+      [(ngModel)]="employeeId"
+    />
+  </div>
+  <button class="btn btn-primary" (click)="searchEmployee()">Search</button>
+
+  <table class="table mt-4" *ngIf="employees.length">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Age</th>
+        <th>Annual Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.employeeName }}</td>
+        <td>{{ employee.employeeSalary }}</td>
+        <td>{{ employee.employeeAge }}</td>
+        <td>{{ employee.employeeAnualSalary }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
